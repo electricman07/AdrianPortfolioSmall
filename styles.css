@@ -22,69 +22,115 @@ body {
   background-repeat: no-repeat;
   margin: 0 auto;
   width: 100vw;
-  height: 60vh;
+  /* height: 60vh; */
   position: relative;
 }
 
 /* NAVIGATION */
-.nav-header {
-  display: none;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-}
 .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-link-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
   justify-content: center;
   align-items: center;
 }
 
 .nav-links {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin: 0;
+  text-align: center;
   padding: 0;
 }
 
-.nav-link {
+.nav-links li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1.5rem;
-  margin: 0 1rem;
 }
 
-.nav-link:hover {
+.nav-links li {
+  margin: 50px 0;
+}
+
+.nav-links:hover {
   text-decoration: underline;
 }
 
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin: 10px;
+  z-index: 2;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #f6911c;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-link-container.active {
+  display: flex;
+}
+
 @media only screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+
   /* NAVIGATION */
-  .nav-header {
+  .nav-bar {
+    width: 100vw;
+  }
+
+  .nav-link-container {
+    position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
     width: 100%;
     height: 80px;
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    background: transparent;
   }
+
   .nav-links {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    margin-right: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links li a {
+    color: #f6911c;
+    text-decoration: none;
+    font-weight: bold;
   }
 }
 
