@@ -318,6 +318,12 @@ section h2 {
 .form-container {
   margin-top: 5rem;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
 /* FOOTER */
 footer {
