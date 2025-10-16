@@ -239,18 +239,24 @@ main {
   }
 }
 
-/* About Section */
-.about-section {
-  display: flex;
-  /* margin-top: 8rem; */
+/* General Styles */
+section {
+  width: 100%;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
 }
-
 section h2 {
   font-family: "Permanent Marker", cursive;
   text-align: center;
   font-size: 3rem;
   color: #647abc;
   margin-bottom: 1rem;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  /* margin-top: 8rem; */
 }
 
 .about-container {
