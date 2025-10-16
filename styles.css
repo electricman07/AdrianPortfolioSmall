@@ -240,10 +240,15 @@ main {
 }
 
 /* General Styles */
+/* Sections */
+
 section {
   width: 100%;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 section h2 {
   font-family: "Permanent Marker", cursive;
@@ -309,12 +314,9 @@ section h2 {
   }
 }
 
-/* Sections */
-.section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Contact Page */
+.form-container {
+  margin-top: 5rem;
 }
 
 /* FOOTER */
