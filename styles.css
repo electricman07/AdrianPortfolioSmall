@@ -39,6 +39,11 @@ body {
   z-index: 5;
 }
 
+.nav-logo {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
 .nav-link-container {
   position: fixed;
   top: 0;
@@ -112,6 +117,10 @@ body {
   /* NAVIGATION */
   .nav-bar {
     width: 100vw;
+  }
+
+  nav-logo {
+    margin-top: 0;
   }
 
   .nav-link-container {
