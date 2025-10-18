@@ -23,13 +23,14 @@ body {
   background-repeat: no-repeat;
   margin: 0 auto;
   width: 100vw;
+  height: 100vh;
   position: relative;
   overflow-x: hidden;
 }
 
 @media only screen and (min-width: 750px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -44,8 +45,16 @@ body {
 }
 
 .nav-logo {
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   margin-left: 1rem;
+}
+
+.social-icon-container {
+  display: flex;
+  gap: 15px;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  z-index: 5;
 }
 
 .nav-link-container {
@@ -123,7 +132,7 @@ body {
     width: 100vw;
   }
 
-  nav-logo {
+  .nav-logo {
     margin-top: 0;
   }
 
@@ -207,9 +216,15 @@ main {
   /* MAIN */
   main {
     width: 100%;
+    height: auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .home {
+    margin-bottom: 10rem;
   }
 
   .blank {
@@ -360,8 +375,18 @@ textarea {
 
 /* FOOTER */
 footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+.social-icon-container {
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.icon-link {
+  font-size: 2rem;
 }
