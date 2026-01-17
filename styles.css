@@ -394,3 +394,94 @@ footer {
 .icon-link {
   font-size: 2rem;
 }
+/* EVENTS / BLOG */
+.summary-content-title a {
+  color: #173f58;
+}
+.center {
+  text-align: center;
+}
+.summary {
+  position: relative;
+  padding-left: 107px;
+  min-height: 77px;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+}
+.summary-date {
+  text-decoration: none;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 14px 0 11px 0;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #0d3b66;
+  width: 80px;
+  line-height: 1;
+  transition: opacity 0.33s;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+}
+.summary-date:hover {
+  opacity: 0.75;
+}
+.summary-month {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.summary-day {
+  display: block;
+  font-size: 2.02rem;
+  font-weight: 700;
+}
+.headline {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+.headline-tiny {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3875rem;
+  margin-bottom: 0.25rem;
+}
+.events-section {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 960px) {
+  .events-section {
+    display: flex;
+  }
+}
+.left {
+  flex: 1;
+  padding: 1.6rem 16px;
+}
+@media (min-width: 960px) {
+  .left {
+    padding: 40px;
+  }
+}
+@media (min-width: 960px) {
+  .left .inner {
+    float: right;
+  }
+}
+.right {
+  flex: 1;
+  background-color: #faf0ca;
+  padding: 1.6rem 16px;
+}
+@media (min-width: 960px) {
+  .right {
+    padding: 40px;
+  }
+}
+@media (min-width: 1350px) {
+  .inner {
+    width: 610px;
+  }
+}
